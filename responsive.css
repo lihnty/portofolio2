@@ -1,0 +1,101 @@
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: .9rem;
+        line-height: 1.8rem;
+    }
+    .grid-3 {
+        gap: 1rem;
+    }
+    .skills-right ul li {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 825px) {
+    /* burger */
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .toggel-burger .line-1 {
+transform: rotate(-45deg) translate(-5px, 7px);
+    }
+    .toggel-burger .line-2 {
+        opacity: 0;
+    }
+    .toggel-burger .line-3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    /* navigation */
+    nav {
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: var(--primarybackgroundcolor);
+        border-left: 1px solid var(--bordercolor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+    }
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-active {
+        transform: translateX(0);
+    }
+    :root {
+        --sectionpadding: 4rem 0;
+    }
+    .section-title {
+        font-size: 1.6rem;
+        margin: 0.6rem 0 2.5rem;
+    }
+    .pre-title {
+       font-size: 0.8rem;
+    }
+    /* hiro */
+    #hiro {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+    .hiro-rigt {
+        order: -1;
+    }
+    .hiro-rigt img {
+        width: 70%;
+    }
+    .hiro-left {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    .hiro-left .pre-title {
+        margin: 0 auto;
+    }
+    .hiro-name {
+        font-size: 2.3rem;
+        margin-bottom: 0.5rem;
+    }
+    /* skill section */
+    .skills-grid {
+        gap: 1rem;
+    }
+    /* futter section */
+    footer {
+        padding: 2rem 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    /* title */
+    .section-title {
+        font-size: 1.3rem;  
+    }
+    .pre-title {
+        font-size: 0.7rem;
+    }
+}
